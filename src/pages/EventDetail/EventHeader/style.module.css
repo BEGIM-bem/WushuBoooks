@@ -1,0 +1,28 @@
+.header_holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.button_holder {
+    width: 22%;
+}
+
+.button_holder img {
+    margin: 0 10px;
+}
+
+.loading_arrow {
+    animation: spinAround .8s linear infinite;
+}
+
+@keyframes spinAround {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

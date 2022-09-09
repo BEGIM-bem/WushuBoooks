@@ -1,0 +1,48 @@
+.table_holder {
+    width: 1321px;
+    margin: 50px 0;
+}
+
+.table_header {
+    background-color: #BE79DF;
+    padding: 30px 20px;
+    border-color: #A25EC1;
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 0;
+}
+
+.table_header p {
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.table_holder table {
+    border-collapse: collapse;
+}
+
+.table_holder thead {
+    overflow-x: scroll;
+}
+
+.table_holder th {
+    min-width: 220px;
+    border: 1px solid #A25EC1;
+    background-color: #BE79DF;
+    color: #fff;
+    text-align: start;
+    padding: 0 10px;
+    font-weight: 800;
+}
+
+.table_holder td {
+    border: 1px solid #E2E2E2;
+}
+
+.table_holder td div {
+    border: none;
+    border-radius: 0px;
+}

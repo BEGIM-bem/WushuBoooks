@@ -1,0 +1,26 @@
+.login_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.left_side {
+    width: 40%;
+    min-height: 600px;
+    height: 100%;
+}
+
+.right_side {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.img_holder {
+    width: 100%;
+    height: 100%;
+}

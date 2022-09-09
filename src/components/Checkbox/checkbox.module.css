@@ -1,0 +1,30 @@
+.holder {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #798FDF;
+    position: relative;
+}
+
+.active_holder {
+    background-color: #798FDF;
+}
+
+.holder img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.holder input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+}

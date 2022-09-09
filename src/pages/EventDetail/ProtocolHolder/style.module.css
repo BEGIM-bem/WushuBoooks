@@ -1,0 +1,33 @@
+.protocol_holder {
+    margin-top: 80px;
+}
+
+.protocol_subgroups {
+    display: flex;
+}
+
+.subgroup_state {
+    background: none;
+    color: #565656;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 50px 15px;
+    padding-bottom: 5px;
+}
+
+.active_subgroup {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 3px solid #5B73CE;
+}
+
+.button_holder {
+    margin: 50px 0;
+    width: 300px;
+}
+
+.button_holder img {
+    margin: 0 10px;
+}

@@ -1,0 +1,74 @@
+.table_holder {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.checkbox_holder {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+}
+
+.table_holder table {
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+.table_holder tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.table_holder th {
+    text-align: start;
+}
+
+.row_stick {
+    width: 5px;
+}
+
+.table_checkbox {
+    width: 10%;
+}
+
+.table_id {
+    width: 10%;
+}
+
+.table_name {
+    width: 25%;
+}
+
+.table_rank {
+    width: 25%;
+}
+
+.table_actions {
+    width: 15%;
+}
+
+.table_holder tbody tr {
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.selected_item {
+    background-color: #F6F8FF;
+    box-shadow: 0px 0px 10px rgba(146, 167, 243, 0.5);
+}
+
+.table_holder td {
+    padding: 25px 0;
+}
+
+.selected_stick {
+    background: #6786F4;
+}
+
+.pagination_holder li {
+    padding: 5px 10px;
+}

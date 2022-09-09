@@ -1,0 +1,35 @@
+.banner_holder {
+    width: 100%;
+    background-color: #72AD6D;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 60px 20px;
+}
+
+.banner_title {
+    width: 35%;
+}
+
+.banner_title h1 {
+    color: #fff;
+}
+
+.banner_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+}
+
+.info_header p {
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.info_data p {
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}

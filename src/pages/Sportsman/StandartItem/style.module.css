@@ -1,0 +1,31 @@
+.standart_holder {
+    width: 96%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.standart_name {
+    font-size: 16px;
+    color: #666;
+}
+
+.indicator_holder {
+    display: flex;
+}
+
+.indicator_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.indicator_column {
+    width: 3px;
+    height: 25px;
+    margin: 0 3px;
+}
+
+.standart_percent {
+    margin: 0 10px;
+}

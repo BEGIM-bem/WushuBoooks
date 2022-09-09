@@ -1,0 +1,88 @@
+.table_container {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 500px;
+    margin: 40px 0 20px 0;
+}
+
+.table_holder {
+    /* display: block; */
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: auto;
+}
+
+.select_holder div {
+    border-color: transparent;
+}
+
+.table_holder thead {
+    background-color: #798FDF;
+    position: sticky;
+    top: 0;
+    z-index: 1000001;
+}
+
+.table_holder tr {
+    border: 1px solid #4C61AF;
+}
+
+.table_holder th {
+    border: 1px solid #4C61AF;
+    min-width: 200px;
+    background-color: #798FDF;
+    color: #fff;
+    background-color: #798FDF;
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+.table_holder td {
+    border: 1px solid #E2E2E2 !important;
+    text-align: center;
+    /* min-width: 200px; */
+}
+
+.table_holder td input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.table_holder td input:hover {
+    border-color: hsl(0, 0%, 70%);
+}
+
+.sticky {
+    background-color: #798FDF;
+    position: sticky;
+    left: 0;
+}
+
+.sticky_data {
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    border-collapse: inherit;
+    z-index: 1000000;
+}
+
+td input {
+    width: 100%;
+    height: 100%;
+    padding: 11px 10px;
+    border: none;
+    font-size: 14px;
+}
+
+td p {
+    padding: 11px 10px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.buttons_holder {
+    margin-left: auto;
+    width: 15%;
+    margin: 40px 0 0px auto;
+}

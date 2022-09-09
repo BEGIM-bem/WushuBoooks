@@ -1,0 +1,187 @@
+.content {
+    margin-left: 29px;
+    margin-top: 66px;
+    margin-right: 28px;
+    /* background: red; */
+}
+
+.content__title {
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    /* or 38px */
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+select {
+    background: #F9F9FF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    width: 224px;
+    height: 49px;
+    padding-left: 15px;
+    margin-top: 44px;
+
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    line-height: 22px;
+}
+
+.over {
+
+    /* height: 200px; */
+    max-height: 200px;
+    overflow-y: scroll;
+    /* background: red; */
+}
+
+/* option {
+    margin-top: 20px;
+    width: 225px;
+    height: 243px;
+    background: #F9F9FF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+
+} */
+
+.ButtonNavigations {
+    margin-top: 83px;
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.chart {
+    /* background: red; */
+    /* height: 621px; */
+    width: 96%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 61px;
+    overflow-x: scroll;
+}
+
+.input {
+    position: relative;
+    width: 224px;
+    height: 49px;
+    background: #F9F9FF;
+    border: 1px solid #E0E6FA;
+    border-radius: 8px;
+    padding-left: 15px;
+    z-index: 1;
+
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.input::placeholder {
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+
+
+.content ul {
+    width: 225px;
+    background: #F9F9FF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    margin-top: 2px;
+    padding-top: 8px;
+
+}
+
+.content__OpenIcon {
+    display: inline;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    /* left: 5px; */
+    /* position: absolute;
+    left: 225px;
+    bottom: 354px; */
+    /* background: red; */
+    z-index: 5;
+    /* right: 0; */
+}
+
+.arrow1 {
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    z-index: 5;
+}
+
+.content li {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+
+
+}
+
+.content li:hover {
+    background: #E0E6FF;
+}
+
+
+
+.select {
+    width: 100%;
+    font-size: 16px;
+    text-align: start;
+    border-radius: 8px;
+    background: rebeccapurple;
+}
+
+.f {
+    width: 187px;
+    cursor: pointer;
+
+    border-radius: 8px;
+    position: relative;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 541px) {
+    .content {
+        margin-left: 3%;
+        margin-top: 100px;
+        margin-right: 28px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 1075px) {
+    .chart {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 713px) {
+    .chart {
+        overflow-x: scroll;
+    }
+}

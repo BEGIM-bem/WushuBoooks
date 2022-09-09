@@ -1,0 +1,32 @@
+.personal_dashboard {
+    border-radius: 8px;
+    border: 3px solid #F2F2F2;
+    padding: 20px 20px;
+    margin-bottom: 50px;
+}
+
+.personal_dashboard label {
+    font-weight: 300;
+}
+
+.input_line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_holder {
+    width: 45%;
+    margin: 15px 20px;
+}
+
+.button_holder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.button {
+    width: 25%;
+}

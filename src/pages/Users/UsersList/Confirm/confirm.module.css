@@ -1,0 +1,43 @@
+.modal_holder {
+    width: 100%;
+    min-height: 400px;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .35);
+    overflow: hidden;
+}
+
+.modal_window {
+    width: 40%;
+    padding-top: 80px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+}
+
+.close_icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.modal_title {
+    width: 90%;
+    margin: auto;
+    color: #000;
+}
+
+.buttons_holder {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}

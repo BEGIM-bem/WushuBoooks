@@ -1,0 +1,318 @@
+.active {
+    /* background: rgba(0, 0, 0, 0.3); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    transform: scale(1);
+    transition: 0.8s;
+
+}
+
+.modal {
+    width: 100vw;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+    transform: scale(1);
+
+}
+
+
+.active::-webkit-scrollbar {
+    width: 5px;
+}
+
+.active::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+
+    border-radius: 4px;
+}
+
+.modal__content {
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    margin-bottom: 3rem;
+    padding-top: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 40%;
+    height: auto;
+    min-width: 200px;
+
+}
+
+
+@media screen and (max-width:788px) {
+
+    .modal__content {
+
+        width: 300px
+            /* background: red; */
+    }
+
+    .modal__content_btn {
+        width: 50%;
+    }
+
+
+
+}
+
+.modal__content_input {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #5B73CE;
+
+}
+
+.modal__content_input::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ABABAB;
+
+}
+
+.modal__content_date {
+    display: flex;
+    margin-top: 55px;
+
+}
+
+.modal__content_day {
+    padding-right: 28px;
+    padding-top: 11px;
+    color: #484848;
+
+}
+
+.modal__content_time {
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+
+    height: 40px;
+    padding-top: 11px;
+
+    padding-left: 30px;
+    color: #484848;
+    padding-right: 30px;
+    /* background: red; */
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.modal__content_cross {
+    float: right;
+    cursor: pointer;
+
+}
+
+.modal__content_timeConteiner {
+    display: flex;
+    background: rebeccapurple;
+}
+
+
+.modal__content_timeAll {
+    height: 200px;
+    width: 40%;
+    /* background: red; */
+    overflow: auto;
+    /* text-align: center; */
+    background: red;
+    display: inline-block;
+    position: relative;
+
+}
+
+.input {
+    width: 190px;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    margin-right: 25px;
+}
+
+.input::placeholder {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ABABAB;
+}
+
+.DropDownListSalary {
+
+    margin-top: 0.5em;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background: #FFFFFF;
+    border: 1px solid #DDDCDC;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: none;
+
+    background: #FCFCFD;
+    padding-bottom: 0.3rem;
+
+    height: 12rem;
+    overflow-y: scroll;
+}
+
+.ListItemSmenaSalary {
+    list-style: none;
+    margin-bottom: 1.2em;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+
+    color: #000000;
+
+}
+
+.modal__content_color {
+    cursor: pointer;
+    display: flex;
+    margin-top: 20px;
+
+    /* background: rebeccapurple; */
+}
+
+
+
+.modal__content_input_time {
+    /* background: red; */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+.modal__content_btn {
+    display: flex;
+    background: #798FDF;
+    border-radius: 8px;
+    align-items: center;
+    width: 226px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    float: right;
+    color: #FFFFFF;
+    margin-top: 45px;
+    margin-bottom: 8px;
+    min-width: 100px;
+
+}
+
+.modal__content_btDelete {
+    float: right;
+}
+
+.modal__content_btnDelete {
+    display: flex;
+    background: red;
+    border-radius: 8px;
+    align-items: center;
+    width: 226px;
+
+    height: 47px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    float: left;
+    color: #FFFFFF;
+    margin-top: 45px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
+
+.modal__content_allBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal__content_input_time1 {
+    margin-right: 40px;
+}
+
+.modal__content_input_text {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #484848;
+}
+
+
+.s {
+    background: red;
+}
+
+.errors {
+    font-size: 14px;
+    color: red;
+}
+
+.dataTime {
+
+    /* background: red; */
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+
+
+}
+
+.datetime {
+    border-radius: 5px !important;
+    padding: 5px;
+    border: 1px solid #d8cccc;
+
+}

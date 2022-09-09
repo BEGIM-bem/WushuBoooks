@@ -1,0 +1,277 @@
+.active {
+    background: rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    transform: scale(1);
+    transition: 0.8s;
+    padding: 30px;
+
+}
+
+.modal {
+    position: absolute;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+    transform: scale(1);
+
+
+}
+
+.active::-webkit-scrollbar {
+    width: 5px;
+}
+
+.active::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+
+    border-radius: 4px;
+}
+
+.modal__content {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+
+    width: 51rem;
+    margin: auto;
+
+}
+
+.modal__content1_crossIcon {
+    float: right;
+    padding: 18px;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+
+    border-radius: 4px;
+}
+
+.modal__content1 {
+    white-space: nowrap;
+    /* background: red; */
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 130px;
+
+}
+
+
+
+
+
+.modal__content_img {
+
+    margin-top: 45px;
+
+}
+
+.modal__content_date {
+    margin-top: 45px;
+}
+
+.modal__content_photo {
+    margin-top: 50px;
+}
+
+.modal__content_files {
+    display: flex;
+    /* background: red; */
+}
+
+
+
+.modal__content_input {
+    background: #F5F5F5;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+    padding-left: 14px;
+
+}
+
+.modal__content_cross {
+
+    margin-left: 60px;
+}
+
+.modal__content_photo_texst {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+    cursor: pointer;
+    color: #777777;
+
+}
+
+.modal__content_imgIcon {
+    display: flex;
+    align-self: center;
+
+    margin-left: 20px;
+}
+
+.modal__content_text {
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 12px;
+
+    color: #424242;
+
+}
+
+
+
+.uploadPhoto {
+    display: none;
+}
+
+.modal__content_closeIcon {
+    float: right;
+    margin-top: 27px;
+    cursor: pointer;
+
+}
+
+.modal__content_input_texaries {
+    background: #F5F5F5;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    height: 342px;
+    width: 100%;
+    padding: 14px;
+
+
+    /* width: 100%; */
+}
+
+.modal__content_btn {
+    background: #798FDF;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.errors {
+    color: red;
+}
+
+.modal__content_title {
+    word-wrap: break-all;
+}
+
+@media screen and (max-width: 865px) {
+    .modal__content {
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 105vh;
+        /* margin: 50% auto; */
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 3rem;
+
+        width: 73%;
+    }
+
+
+
+    .modal__content1 {
+        white-space: nowrap;
+        /* background: red; */
+        /* width: 68%; */
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+    }
+
+
+    .modal__content_title {
+        font-size: 25px;
+
+    }
+}
+
+@media screen and (max-width: 464px) {
+
+    .modal__content_title {
+
+        font-size: 1.2rem;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 614px) {
+
+    .modal__content_files {
+        display: flex;
+        flex-direction: column;
+        /* background: red; */
+    }
+
+    .modal__content_cross {
+
+        margin-left: 0px;
+    }
+
+    .modal__content_closeIcon {
+        float: left;
+        margin-top: 27px;
+        cursor: pointer;
+
+    }
+}
+
+@media screen and (max-width: 406px) {
+
+    .modal__content_title {
+
+        font-size: 1rem;
+    }
+}

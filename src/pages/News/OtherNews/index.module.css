@@ -1,0 +1,164 @@
+.conteinerNews {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+
+
+}
+
+
+.conteinerNews__block {
+    background: #F9F9FF;
+    border: 1px solid #F8F8FF;
+    box-shadow: 0px 0px 7px #E2E1FD;
+    border-radius: 8px;
+
+    width: 410px;
+    /* height: 100px; */
+    margin: 20px;
+
+    position: relative;
+}
+
+
+
+
+
+
+.conteinerNews__allNews {
+    margin: 10px;
+    position: relative;
+}
+
+.conteinerNews__title {
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.conteinerNews__text {
+
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    margin-top: 14px;
+    margin-bottom: 39px;
+
+    /* height: 140px; */
+    /* overflow: scroll; */
+
+    color: #5F5F5F;
+
+    /* background: red; */
+
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+
+}
+
+.conteinerNews__block:hover .conteinerNews__title {
+    color: #5B73CE;
+}
+
+
+
+.conteinerNews__block:hover {
+    color: #5B73CE;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px 15px #DDDBFF;
+}
+
+
+
+
+.conteinerNews__date {
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    color: #9B9999;
+    margin: 14px;
+
+    /* background: red; */
+
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: red;
+    /* identical to box height */
+}
+
+
+
+.conteinerNews__block_for_img {
+    /* width: 399px; */
+    /* width: 80%; */
+    /* width: 462px; */
+    /* Ширина области */
+
+    height: 262px;
+    /* Высота области */
+    margin: 0;
+}
+
+.conteinerNews__images {
+    width: 100%;
+    /* Ширина изображений */
+    height: 100%;
+    /* Высота изображении */
+    object-fit: cover;
+
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+@media screen and (max-width: 459px) {
+    .conteinerNews__block {
+
+        width: 300px;
+
+    }
+
+    .spinner {
+        margin-top: 5vh;
+    }
+
+
+}
+
+
+@media screen and (max-width: 880px) {
+    .conteinerNews__date {
+        /* background: red; */
+        position: relative;
+        top: 0px;
+
+
+    }
+
+
+}

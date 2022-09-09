@@ -1,0 +1,153 @@
+.dialog__item {
+    display: flex;
+    margin-bottom: 10px;
+    /* background: red; */
+    padding-right: 21px;
+    padding-left: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.dialog__item:active {
+    background: #E5EBFF;
+    border-right: 6px solid #6786F4;
+}
+
+.dialog__item_avator {
+    flex: 0 0 50px;
+    /* position: relative; */
+    /* flex: 0 0 50px;
+    width: 40px;
+    height: 40px; */
+    background: #C3D0FD;
+    /* background: red; */
+    /* display: flex;
+    flex-direction: column-reverse;
+    text-align: center; */
+    /* width: 48px;
+    height: 48px;
+    margin-right: 11px;
+    border-radius: 50%; */
+    border-radius: 50%;
+    position: relative;
+    /* flex: 0 0 40px; */
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.dialog__item_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dialog__item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.dialog__item_info_name {
+    font-family: 'Lato';
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.dialog__item_info_top {
+    display: flex;
+}
+
+b {
+    font-weight: 500;
+    font-size: 14px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.dialog__item_date {
+    /* font-family: 'Lato'; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+    color: #3A3A3A;
+}
+
+.dialog__item_dateMe {
+    /* font-family: 'Lato'; */
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3A3A3A;
+}
+
+.dialog__item__text {
+    /* font-family: 'Lato';
+    font-style: normal; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3A3A3A;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 1.2em;
+    white-space: nowrap;
+    width: 277px;
+}
+
+.dialog__item_info_bottom {
+    position: relative;
+}
+
+.dialog__item_info_cout {
+    background: #CE5B5B;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 17px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.dialog__item__online {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #8EC58A;
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 875px) {
+    .dialog__item_date {
+        margin-right: 53px;
+    }
+    .dialog__item_dateMe {
+        margin-right: 53px;
+    }
+    .dialog__item_info_cout {
+        position: absolute;
+        right: 57px;
+        bottom: 0;
+    }
+}

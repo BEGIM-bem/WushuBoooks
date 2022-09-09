@@ -1,0 +1,47 @@
+.item_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.5);
+    margin: 20px 1% 20px 2%;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.trash_icon {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.item_title {
+    font-size: 14px;
+    color: #000;
+}
+
+.item_size {
+    font-size: 12px;
+    color: #525252;
+}
+
+.item_progress_bar_holder {
+    height: 10px;
+    width: 100%;
+    background-color: rgba(58, 194, 103, .2);
+    position: absolute;
+    bottom: 0;
+}
+
+.item_progress_bar {
+    height: 100%;
+    background-color: #3AC267;
+    border-radius: 10px;
+}

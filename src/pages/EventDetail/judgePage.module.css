@@ -1,0 +1,21 @@
+.header {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons_holder {
+    display: flex;
+    align-items: center;
+}
+
+.reject_button {
+    width: 190px;
+    margin: 0 16px;
+}
+
+.accept_button {
+    width: 190px;
+}

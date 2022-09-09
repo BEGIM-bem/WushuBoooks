@@ -1,0 +1,141 @@
+button {
+    display: flex;
+    justify-content: center;
+}
+
+.primary {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #798FDF;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #798FDF;
+    cursor: pointer;
+}
+
+.primary:hover {
+    background-color: #6786F4;
+}
+
+.primary:active {
+    background-color: #5B73CE;
+    border: 1px solid #2A27F2;
+    box-shadow: 0px 0px 10px #6563FF;
+}
+
+.secondary {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background: none;
+    color: #798FDF;
+    padding: 20px 0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.secondary:hover {
+    color: #6786F4;
+}
+
+.forgot_password {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #798FDF;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 0 0 8px 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* .secondary:focus {
+    border: 4px solid #5B73CE;
+    filter: drop-shadow(0px 0px 10px #6563FF);
+} */
+
+.add_user {
+    font-size: 18px;
+    padding: 13px 0;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    background-color: #798FDF;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #798FDF;
+    cursor: pointer;
+}
+
+.add_user:hover {
+    background-color: #6786F4;
+}
+
+.confirm_primary {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #798FDF;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 0 0 8px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #798FDF;
+}
+
+.confirm_primary:hover {
+    background-color: #6786F4;
+}
+
+.confirm_primary:active {
+    background-color: #5B73CE;
+    border: 1px solid #2A27F2;
+    box-shadow: 0px 0px 10px #6563FF;
+}
+
+.confirm_secondary {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+    background: none;
+    color: #798FDF;
+    padding: 12px 0;
+    border-radius: 0 0 0 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.reject {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+    background: none;
+    color: #DF797F;
+    padding: 12px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

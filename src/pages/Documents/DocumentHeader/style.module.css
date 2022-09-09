@@ -1,0 +1,22 @@
+.header_holder {
+    width: 96%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title {
+    color: #000;
+}
+
+.header_input {
+    display: none;
+}
+
+.button_holder {
+    width: 20%;
+}
+
+.button_img {
+    margin: 0 20px;
+}

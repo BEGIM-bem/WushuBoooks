@@ -1,0 +1,61 @@
+.holder_list {
+    width: 96%;
+    display: flex;
+    margin: 80px auto 30px auto;
+    align-items: center;
+}
+
+.holder_list_2 {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 30px auto;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.holder_inner {
+    width: 96%;
+}
+
+.list_header {
+    width: 100%;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header_title {
+    margin: 0;
+    font-size: 14px;
+    color: #585858;
+    font-weight: 600;
+    text-align: start;
+}
+
+.checkbox_holder {
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+}
+
+.header_checkbox {
+    width: 16%;
+}
+
+.header_name {
+    width: 30%;
+}
+
+.header_date {
+    width: 25%;
+}
+
+.header_status {
+    width: 15%;
+}
+
+.header_email {
+    width: 22%;
+}

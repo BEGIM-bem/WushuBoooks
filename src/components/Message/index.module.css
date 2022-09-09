@@ -1,0 +1,198 @@
+.message {
+    display: flex;
+    margin-bottom: 16px;
+
+
+}
+
+.message_Me {
+    display: flex;
+
+    margin-bottom: 16px;
+    /* background: red; */
+    flex-direction: row-reverse;
+    /* align-items: flex-end; */
+
+    /* justify-content: flex-end; */
+
+
+}
+
+.message__avator {
+
+    background: #C3D0FD;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    width: 48px;
+    height: 48px;
+    margin-right: 11px;
+
+    /* margin-left: 11px; */
+    border-radius: 50%;
+}
+
+
+.message__content {
+
+    margin: auto 0 0 0;
+}
+
+
+
+
+.message__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 11px;
+
+}
+
+.message__bubble {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    white-space: normal;
+    background: #EFEFEF;
+    /* padding: 11px; */
+    padding-top: 11px;
+    padding-left: 11px;
+    padding-bottom: 6px;
+    border-radius: 10px 10px 10px 0px;
+    max-width: 800px;
+
+}
+
+.message__bubble_Me {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    white-space: normal;
+    background: #EFEFEF;
+    /* padding: 11px; */
+    padding-top: 11px;
+    padding-left: 11px;
+    padding-bottom: 6px;
+    border-radius: 10px 10px 0px 10px;
+    max-width: 800px;
+    margin-right: 11px;
+
+}
+
+.message__text {
+    /* background: #0f3997; */
+    max-width: 375px;
+    white-space: normal
+}
+
+.message__bubble_att {
+    background: 0;
+}
+
+.message__date {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #505050;
+}
+
+.message__element_icon {
+    /* width: 28px;
+    height: 28px; */
+    margin-top: -2px;
+    margin-right: 5px;
+    /* background: red; */
+}
+
+.message__elements {
+    display: flex;
+    margin: auto 0 0 0;
+
+    height: 16px;
+    margin-left: 20px;
+
+    margin-right: 8px;
+
+}
+
+.message__attachments {
+    display: flex;
+    margin-bottom: 5px;
+    order: 1;
+}
+
+.message__attachments_item {
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.message__attachments_img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.message__audio_button {
+    width: 28px;
+    height: 28px;
+    margin-right: 30px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: 0;
+    background: #0f3997;
+    cursor: pointer;
+}
+
+
+.message__audio_buttonPlay {
+    height: 11px;
+}
+
+.message__audio_info {
+
+    /* height: 130px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    position: relative;
+
+
+}
+
+.message__audio_wave1 {
+    padding: 5px;
+}
+
+
+
+
+.message__audio {
+    width: 240px;
+
+    /* background: red; */
+}
+
+.message__audio_duration {
+    color: blue;
+    opacity: 0.5;
+    margin-left: 35px;
+}
+
+audio {
+    display: none;
+}
+
+
+.message__audio_progress {
+    background: #505050;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+}

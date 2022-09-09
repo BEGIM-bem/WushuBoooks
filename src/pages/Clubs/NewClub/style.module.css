@@ -1,0 +1,100 @@
+.modal_holder {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 800px;
+    overflow: auto;
+
+}
+
+.modal_header {
+    width: 90%;
+}
+
+.title {
+    color: #000;
+    font-weight: 500;
+    text-align: start;
+    margin: 5% 0;
+}
+
+.close_icon {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.modal_content {
+    width: 90%;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.name_holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name_holder label {
+    color: #000;
+    font-size: 10px;
+    width: 100%;
+    text-align: start;
+    line-height: 25px;
+}
+
+.name_holder {
+    margin: 15px 0;
+}
+
+.select {
+    width: 100%;
+    font-size: 16px;
+    text-align: start;
+    border-radius: 8px;
+}
+
+.select:last-child {
+    background-color: #f5f5f5;
+}
+
+.add_trainer {
+    width: 100%;
+    background: none;
+    padding: 10px 0;
+    color: #616161;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal_footer {
+    width: 100%;
+    display: flex;
+}

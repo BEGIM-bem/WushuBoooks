@@ -1,0 +1,36 @@
+.protocol_table table {
+    border-collapse: collapse;
+}
+
+.protocol_table th {
+    background-color: #798FDF;
+    border: 1px solid #4C61AF;
+    color: #fff;
+    padding: 30px 25px;
+}
+
+.protocol_table td {
+    border: 1px solid #E2E2E2;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.protocol_table p {
+    text-align: start;
+}
+
+.id_td {
+    min-width: 80px;
+}
+
+.name_td {
+    min-width: 300px;
+}
+
+.club_td {
+    min-width: 300px;
+}
+
+.arena_td {
+    min-width: 170px;
+}

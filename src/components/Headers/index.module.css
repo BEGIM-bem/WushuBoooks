@@ -1,0 +1,307 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+    /* color: '#FFE99C', */
+
+    position: relative;
+
+
+
+}
+
+
+
+
+.headers1 {
+    display: flex;
+    /* background: red; */
+
+
+}
+
+.header__notification {
+    display: flex;
+    /* background: rebeccapurple; */
+    position: relative;
+
+}
+
+.header__icon_conteiner {
+
+    width: 18px;
+    height: 18px;
+    background: #CE5B5B;
+    border-radius: 50%;
+
+
+    /* font-weight: 600; */
+    font-size: 10px;
+    /* line-height: 10px; */
+    position: absolute;
+    right: 35%;
+    top: -4%;
+
+}
+
+.header__icon_count {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.headers__title {
+    font-family: 'Lato', sans-serif;
+
+    font-size: 16px;
+    line-height: 19px;
+
+    padding-top: 23px;
+    padding-left: 12px;
+    color: #414141;
+}
+
+
+
+.header__logotip {
+    display: flex;
+}
+
+
+.header__allIcon {
+    display: flex;
+    margin-top: 0px;
+    align-self: flex-end;
+    margin-right: 18px;
+    /* position: relative; */
+    /* background: red; */
+}
+
+
+
+.header__notIcon {
+
+    margin-top: 3px;
+    width: 32.6px;
+    height: 32.6px;
+    padding: 10px;
+    /* border: 1px solid #F2F2F2; */
+    filter: drop-shadow(0px 0px 5px #C8C8C8);
+    border-radius: 8px;
+}
+
+
+.header__notIcon1 {
+
+    margin-top: 3px;
+    width: 32.6px;
+    height: 32.6px;
+
+    filter: drop-shadow(0px 0px 5px #C8C8C8);
+    border-radius: 8px;
+    position: relative;
+}
+
+
+
+.headers_profil {
+    display: flex;
+
+}
+
+
+
+.headers_profil1 {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+}
+
+
+.headers_profil_icon {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+}
+
+
+.header__icon {
+    margin-right: 28px;
+    width: 38px;
+    height: 38px;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.header__logo {
+    margin-left: 13px;
+}
+
+
+
+
+@media screen and (max-width: 1009px) {
+    .header__allIcon {
+
+        margin-right: 50px;
+    }
+
+}
+
+
+
+.f {
+    width: 187px;
+
+
+    position: relative;
+    height: 50px;
+}
+
+.f1 {
+    visibility: hidden;
+}
+
+
+
+.headers_profil_pops {
+
+    margin-top: 19px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-top: 5px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.headers_profil_name {
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.headers_profil_popsUp {
+    display: flex;
+    margin-bottom: 5px;
+
+
+}
+
+.headers_profil_hover {
+    padding-top: 10px;
+
+    padding-left: 10px;
+
+
+}
+
+.headers_profil_pops :hover {
+    background: #F6F8FF;
+    cursor: pointer;
+
+}
+
+
+.arrow {
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    top: 42%;
+}
+
+
+.arrowOpenIcon {
+
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    top: 34%;
+}
+
+@media screen and (max-width: 845px) {
+    .header__allIcon {
+        margin-top: 55px;
+
+
+        margin-right: 0px;
+
+    }
+
+    .header__icon {
+        margin-right: 20px;
+    }
+
+
+    .header__icon_conteiner {
+        position: absolute;
+        right: 15px;
+        top: -5%;
+    }
+
+
+
+}
+
+
+.header__twoIcon {
+    display: flex;
+
+}
+
+@media screen and (max-width: 413px) {
+
+    .header {
+        margin-bottom: 100px;
+
+    }
+
+    .header__allIcon {
+
+        margin-top: 83px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 541px) {
+
+    .header__allIcon {
+
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        display: flex;
+        /* background: red; */
+        justify-content: space-between;
+
+    }
+
+    .headers__title {
+
+        width: 60%;
+    }
+
+    .f {
+        justify-content: end;
+        position: relative;
+        float: right;
+        /* height: 50px; */
+        top: 0;
+
+    }
+
+}

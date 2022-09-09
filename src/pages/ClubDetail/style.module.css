@@ -1,0 +1,15 @@
+.page_holder {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.all_sportsmans_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_button_holder {
+    width: 15%;
+}

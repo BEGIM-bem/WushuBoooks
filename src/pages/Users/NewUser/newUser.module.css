@@ -1,0 +1,103 @@
+.form_holder {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, .35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.form {
+    width: 500px;
+    max-height: 80%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close_icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.form_title {
+    font-size: 24px;
+    margin: 24px 24px;
+    color: #000;
+    text-align: start;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.form_content {
+    width: 100%;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.form_role {
+    margin: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_role {
+    color: #000;
+}
+
+.form_radio_holder {
+    display: flex;
+    align-items: center;
+}
+
+.form_role label {
+    cursor: pointer;
+    font-size: 16px;
+    text-align: start;
+}
+
+.form_role input {
+    cursor: pointer;
+}
+
+
+.radio_input_holder {
+    width: 20px;
+    /* padding-bottom: 3px; */
+}
+
+.form_input_list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+.form_input_holder {
+    text-align: start;
+}
+
+.form_input_holder label {
+    font-size: 10px;
+    color: #424242;
+}
+
+.form_footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+}

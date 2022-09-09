@@ -1,0 +1,16 @@
+.banner_holder {
+    width: 100%;
+    background-color: #F46767;
+    color: #fff;
+    padding: 25px 20px;
+    margin: 75px 0;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,161 @@
+.page_holder {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal_info {
+    width: 35%;
+    margin-right: 30px;
+}
+
+.profile_card {
+    min-height: 500px;
+}
+
+.achievement {
+    width: 65%;
+    margin-left: 30px;
+}
+
+.achievement .card {
+    padding: 25px;
+    height: 89.5%;
+    flex-grow: 1;
+}
+
+.header_title {
+    width: 100%;
+    text-align: start;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #F6F8FF;
+    box-shadow: 0px 0px 5px rgba(146, 167, 243, 0.5);
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.card_standart_holder {
+    height: 320px;
+    overflow-y: scroll;
+}
+
+.card_title {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card_club_title {
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.ButtonNavigations {
+    margin-top: 48px;
+    display: flex;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.statistist {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 96%;
+}
+
+.statistics__diagram {
+    /* width: 100%; */
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-x: scroll;
+    height: 573px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /* margin-top: 150px; */
+    /* background: red; */
+}
+
+.statistics__diagramScroll {
+    position: relative;
+    width: 900px;
+    overflow-x: scroll;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: red;
+    padding-top: 50px;
+    /* identical to box height */
+}
+
+.line_holder {
+    width: 96%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_side {
+    width: 100px;
+    text-align: start;
+    margin-right: 20px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.achievement table {
+    width: 100%;
+}
+
+.achievement th {
+    text-align: start;
+    font-size: 14px;
+    color: #585858;
+    font-weight: 500;
+}
+
+.achievement tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.achievement td {
+    padding: 25px 0;
+}
+
+.on_edit_button {
+    background: none;
+    border: none;
+    color: #798FDF;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.on_edit_button_holder {
+    width: 95%;
+    margin: 0 auto 10px auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit_button_holder {
+    width: 250px;
+    margin: 100px auto;
+}

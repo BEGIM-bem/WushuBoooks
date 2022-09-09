@@ -1,0 +1,39 @@
+.profile_page {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding: 70px 0;
+    justify-content: center;
+}
+
+.profile_img_board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.profile_img {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.image_button_holder {
+    margin: 20px 0;
+}
+
+.img_input {
+    display: none;
+}
+
+.dashboard {
+    margin-left: 100px;
+    flex-grow: 1;
+}
+
+.dashboard_title {
+    font-weight: 500;
+    margin-bottom: 20px;
+}

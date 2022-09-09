@@ -1,0 +1,39 @@
+.nav_holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_inner {
+    width: 96%;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.nav_item {
+    font-size: 16px;
+    color: #565656;
+    cursor: pointer;
+    margin: 0 20px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.nav_items_holder {
+    display: flex;
+}
+
+.active_nav_item {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 3px solid #6786F4;
+}
+
+.add_user_button {
+    width: 17%;
+}

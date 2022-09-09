@@ -1,0 +1,116 @@
+.arena_holder {
+    border-radius: 8px;
+    border: 3px solid #A0B2F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin: 50px 0;
+}
+
+.judge_side {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.judge_place {
+    width: 25px;
+    height: 25px;
+    background: #67C25F;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+.arena_square {
+    background: #6D85DE;
+    border-radius: 8px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.arena_wards_holder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+}
+
+.square_row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.sub_square_item {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    margin: 0 30px;
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+.square_title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.select_holder {
+    width: 300px;
+    margin: 30px 50px 30px 0;
+}
+
+.arena_wards_west {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.arena_wards_east {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    writing-mode: vertical-lr;
+}
+
+.arena_wards_north {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.arena_wards_south {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.arena_options {
+    display: flex;
+    align-items: center;
+}
+
+.button_holder {
+    width: 15%;
+    margin-top: 15px;
+}
