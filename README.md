@@ -16,7 +16,7 @@ on applications received from coaches. During the work, an application was devel
 
 
 
-Demo: https://admin-panel-flowers.herokuapp.com/authorization
+Demo: https://wushubook2-fdp9g.ondigitalocean.app/
 
 __Techonology__
 
