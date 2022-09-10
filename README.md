@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# WushuBoooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Developed a social project "Wushu Book” from scratch. This is a web application, the purpose of which
+is to automate the formation of protocols and arenas by the program based
+on applications received from coaches. During the work, an application was developed for 4 roles: for the administrator, secretary, coach and for the chief judge.
 
-## Available Scripts
+ - The division of the application by roles has been developed: admin, secretary, coach, judge.
+ - The addition of admin news for all roles has been developed
+ - Connected the FullCalendar library, for the possibility of convenient date marking in the calendar.
+ - Developed statistics on the achievements of the club and on the personal achievement of each athlete using react-chartjs-2.
+ - Developed a live chat using a popular library socket.io
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![](./img/main.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Demo: https://admin-panel-flowers.herokuapp.com/authorization
 
-### `npm run build`
+__Techonology__
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- React-redux
+- Reduxjs-toolkit
+- React-router
+- Axios
+- Form-data
+- Formik, Yup
+- Serve
+- Socket.io
+- Jwt-decode
+- Chart.js
+- Fullcalendar
+- React-loader-spinner
+- Moment
+- Material UI
+- Styled-components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+__Install__
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use the git to clone the project to your local machine.
 
-### `npm run eject`
+    git clone https://github.com/BEGIM-bem/WushuBoooks.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to the extracted folder
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    cd WushuBoooks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install the dependencies and modules
+  
+     npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+__Usage__
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    npm run dev
+    
