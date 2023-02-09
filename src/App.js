@@ -37,12 +37,12 @@ function App() {
 
   const { isLogged } = useSelector(state => state.profile.login);
   const { user } = useSelector(state => state.profile);
-  const { dialogs } = useSelector(state=>state.dialogs);
-  const { modal } = useSelector(state=>state.general);
+  const { dialogs } = useSelector(state => state.dialogs);
+  const { modal } = useSelector(state => state.general);
 
   useEffect(() => {
     socket.emit('join-to-lobby', {
-      lobby_list: dialogs.map((item)=>item.lobby_id)
+      lobby_list: dialogs.map((item) => item.lobby_id)
     })
   }, [dialogs])
 
@@ -62,7 +62,7 @@ function App() {
     <div>
       {
         modal.type !== null &&
-        <Modal store={modal} props={modal.props}/>
+        <Modal store={modal} props={modal.props} />
       }
       {isLogged
         ? <>
@@ -82,7 +82,7 @@ function App() {
                 <Route path='/news' element={<MainNews />} />
                 <Route path='/statistics' element={<Statistics />} />
                 {
-                  user.role === 'admin' &&
+                  user.role !== 'admin' &&
                   <Route path='/users' element={<Users />} />
                 }
                 <Route path='/profile' element={<Profile />} />

@@ -4,7 +4,7 @@ import Select from 'react-select';
 import { Button } from '../../../components';
 import { TailSpin } from 'react-loader-spinner';
 
-const Square = ({index}) => {
+const Square = ({ index }) => {
   return (
     <div className={styles.sub_square_item}>
       <p className={styles.square_title}>Площадка {index}</p>
@@ -23,55 +23,55 @@ const arenaList = {
 }
 
 const arenaWards = [
-  {value: 'west', label: 'Запад'},
-  {value: 'east', label: 'Восток'},
-  {value: 'south', label: 'Юг'},
-  {value: 'north', label: 'Север'},
-  {value: 'south_north', label: 'Север-Юг'},
+  { value: 'west', label: 'Запад' },
+  { value: 'east', label: 'Восток' },
+  { value: 'south', label: 'Юг' },
+  { value: 'north', label: 'Север' },
+  { value: 'south_north', label: 'Север-Юг' },
 ]
 
 const getSquareOptions = (arena) => {
   let options = [
-    {value: 2, label: '2'},
-    {value: 4, label: '4'},
-    {value: 6, label: '6'},
+    { value: 2, label: '2' },
+    { value: 4, label: '4' },
+    { value: 6, label: '6' },
   ];
-  if (arena === 'south_north') options.unshift({value: 1, label: '1'});
+  if (arena === 'south_north') options.unshift({ value: 1, label: '1' });
   return options;
 }
 
 const Arena = ({
-  arena, 
-  divs, 
-  setArena, 
-  setDivs, 
-  role, 
-  isLoading=false, 
+  arena,
+  divs,
+  setArena,
+  setDivs,
+  role,
+  isLoading = false,
   onSave: handleSaveApplication,
 }) => {
   const onSave = () => {
-    handleSaveApplication({arena, area: divs});
+    handleSaveApplication({ arena, area: divs });
   }
   return (
     <>
       {
-        (role === 'secretary' || role === 'admin') &&
+        (role !== 'admin') &&
         <div className={styles.arena_options}>
           <div className={styles.select_holder}>
             <label htmlFor="divs">Количество площадок</label>
-            <Select 
+            <Select
               options={getSquareOptions(arena)}
-              value={{value: divs, label: `${divs}`}}
-              onChange={(e)=>setDivs(e.value)}
-              name="divs"/>
+              value={{ value: divs, label: `${divs}` }}
+              onChange={(e) => setDivs(e.value)}
+              name="divs" />
           </div>
           <div className={styles.select_holder}>
             <label htmlFor="divs">Выберите арену</label>
-            <Select 
+            <Select
               options={arenaWards}
-              value={{value: arena, label: `${arenaList[arena]}`}}
-              onChange={(e)=>setArena(e.value)}
-              name="divs"/>
+              value={{ value: arena, label: `${arenaList[arena]}` }}
+              onChange={(e) => setArena(e.value)}
+              name="divs" />
           </div>
           <div className={styles.button_holder}>
             <Button
@@ -80,8 +80,8 @@ const Arena = ({
               onClick={onSave}>
               {
                 isLoading
-                ? <TailSpin height={24} color="#fff"/>
-                : "Сохранить"
+                  ? <TailSpin height={24} color="#fff" />
+                  : "Сохранить"
               }
             </Button>
           </div>
@@ -110,7 +110,7 @@ const Arena = ({
             <div className={styles.square_row}>
               {
                 (new Array(divs)).fill(0).map((_, i) => (
-                  <Square key={i} index={i+1}/>
+                  <Square key={i} index={i + 1} />
                 ))
               }
             </div>
@@ -120,7 +120,7 @@ const Arena = ({
             <div className={styles.square_row}>
               {
                 (new Array(divs)).fill(0).map((_, i) => (
-                  <Square key={i} index={i+1}/>
+                  <Square key={i} index={i + 1} />
                 ))
               }
             </div>
@@ -130,15 +130,15 @@ const Arena = ({
             <>
               <div className={styles.square_row}>
                 {
-                  (new Array(divs/2)).fill(0).map((_, i) => (
-                    <Square key={i} index={i+1}/>
+                  (new Array(divs / 2)).fill(0).map((_, i) => (
+                    <Square key={i} index={i + 1} />
                   ))
                 }
               </div>
               <div className={styles.square_row}>
                 {
-                  (new Array(divs/2)).fill(0).map((_, i) => (
-                    <Square key={i} index={i*2+i}/>
+                  (new Array(divs / 2)).fill(0).map((_, i) => (
+                    <Square key={i} index={i * 2 + i} />
                   ))
                 }
               </div>

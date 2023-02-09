@@ -32,23 +32,23 @@ function NavBar() {
 
                 {
                     MenuItems.map((item, index) => {
-                        if (user.role === 'admin') {
+                        if (user.role !== 'admin') {
                             return (
-                            <NavLink 
-                                key={index} 
-                                className={styles.navbar__link} 
-                                to={item.to}>
+                                <NavLink
+                                    key={index}
+                                    className={styles.navbar__link}
+                                    to={item.to}>
                                     {item.title}
-                            </NavLink>)
+                                </NavLink>)
                         }
                         if (item.title !== 'Пользователи') {
                             return (
-                            <NavLink 
-                                key={index} 
-                                className={styles.navbar__link} 
-                                to={item.to}>
+                                <NavLink
+                                    key={index}
+                                    className={styles.navbar__link}
+                                    to={item.to}>
                                     {item.title}
-                            </NavLink>)
+                                </NavLink>)
                         }
                         return null;
                     })

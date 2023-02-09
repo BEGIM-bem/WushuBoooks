@@ -14,14 +14,14 @@ import { usePagination } from '../../hooks';
 
 function Clubs() {
     // Constants
-    const { data, status, error } = useSelector(state=>state.clubs);
-    const { trainer } = useSelector(state=>state.users);
-    const { user } = useSelector(state=>state.profile);
+    const { data, status, error } = useSelector(state => state.clubs);
+    const { trainer } = useSelector(state => state.users);
+    const { user } = useSelector(state => state.profile);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
     // Hooks
-    const { 
+    const {
         currentData,
         currentPage,
         jump,
@@ -36,7 +36,7 @@ function Clubs() {
     // Functions
     const handleOpenNewClub = () => setNewClub(true);
     const handleCloseNewClub = () => setNewClub(false);
-    const handleClubClick = (id) => navigate('/clubs/'  + id);
+    const handleClubClick = (id) => navigate('/clubs/' + id);
 
     const handleAddClub = () => {
         handleOpenNewClub();
@@ -46,12 +46,12 @@ function Clubs() {
     const handleSubmitClub = (data) => dispatch(createClub(data));
 
     // Effects
-    useEffect(()=>{
-        if (trainer.data === null) dispatch(setUsersList({role: 'trainer'}))
+    useEffect(() => {
+        if (trainer.data === null) dispatch(setUsersList({ role: 'trainer' }))
         dispatch(getAllClubs());
     }, [dispatch])
 
-    useEffect(()=>{
+    useEffect(() => {
         if (status === 'Created new club') {
             handleCloseNewClub();
             dispatch(getAllClubs());
@@ -61,18 +61,18 @@ function Clubs() {
 
     return (
         <div className={styles.content}>
-            {newClub && 
-            <NewClub 
-                closeModal={handleCloseNewClub} 
-                handleSubmitClub={handleSubmitClub}
-                status={status}
-                error={error}
-                trainers={trainer.data}/>}
+            {newClub &&
+                <NewClub
+                    closeModal={handleCloseNewClub}
+                    handleSubmitClub={handleSubmitClub}
+                    status={status}
+                    error={error}
+                    trainers={trainer.data} />}
             <div className={styles.clubs_header}>
                 <h2 className={styles.clubs_title}>Клубы</h2>
                 <div className={styles.button_holder}>
                     {
-                        (user.role === 'admin' || user.role === 'secretary') &&
+                        (user.role !== 'admin' || user.role !== 'secretary') &&
                         <Button
                             type="button"
                             onClick={handleAddClub}
@@ -80,14 +80,14 @@ function Clubs() {
                     }
                 </div>
             </div>
-            <ClubsList 
+            <ClubsList
                 clubClick={handleClubClick}
                 clubs={currentData}
                 maxPage={maxPage}
                 currentPage={currentPage}
                 jump={jump}
                 next={next}
-                prev={prev}/>
+                prev={prev} />
         </div>
     )
 }

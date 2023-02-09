@@ -16,57 +16,57 @@ const arenaList = {
   'south_or_north': 'Восток/Юг'
 }
 
-const ProtocolHolder = ({list = [], role, onSave, status, judgeForm, handleInputChange, judgeList, isAcceptedProtocol}) => {
-  const [ subgroupState, setSubgroupState ] = useState(0);
-  const [ divs, setDivs ] = useState(list.map(i=>{
+const ProtocolHolder = ({ list = [], role, onSave, status, judgeForm, handleInputChange, judgeList, isAcceptedProtocol }) => {
+  const [subgroupState, setSubgroupState] = useState(0);
+  const [divs, setDivs] = useState(list.map(i => {
     if (!i.area) return i.arena === 'south_north' ? 1 : 2;
     return i.area;
   }));
-  const [arena, setArena] = useState(list.map(i=>i.arena))
+  const [arena, setArena] = useState(list.map(i => i.arena))
 
-  const handleDivsChange = (value) => setDivs((prev)=>{
+  const handleDivsChange = (value) => setDivs((prev) => {
     const arr = JSON.parse(JSON.stringify(prev));
     arr[subgroupState] = value;
     return arr;
   });
 
-  const handleArenaChange = (value) => setArena((prev)=> {
+  const handleArenaChange = (value) => setArena((prev) => {
     if (value !== 'south_north' && divs[subgroupState] === 1) handleDivsChange(2);
     const arr = JSON.parse(JSON.stringify(prev));
     arr[subgroupState] = value;
     return arr;
   })
 
-  const handleSave = (data) => onSave({id: list[subgroupState].id, data});
-  
+  const handleSave = (data) => onSave({ id: list[subgroupState].id, data });
+
   return (
     <div className={styles.protocol_holder}>
       {
-        role !== 'trainer' &&
+        role === 'trainer' &&
         <h1 className={styles.protocol_header_title}>Протокол соревнований</h1>
       }
       <div className={styles.protocol_subgroups}>
-        {list.map((item, i)=>(
-          <button 
+        {list.map((item, i) => (
+          <button
             key={i}
             className={styles.subgroup_state + ' ' + (subgroupState === i && styles.active_subgroup)}
             type="button"
-            onClick={()=>setSubgroupState(i)}>{item.name}</button>
+            onClick={() => setSubgroupState(i)}>{item.name}</button>
         ))}
       </div>
-      <ProtocolTable list={list[subgroupState].applications} arena={arenaList[arena[subgroupState]]}/>
+      <ProtocolTable list={list[subgroupState].applications} arena={arenaList[arena[subgroupState]]} />
       {
         role === 'trainer' &&
-        <JudgeTeamTable judgeForm={judgeForm} handleInputChange={handleInputChange} options={judgeList} isAcceptedProtocol={isAcceptedProtocol}/>
+        <JudgeTeamTable judgeForm={judgeForm} handleInputChange={handleInputChange} options={judgeList} isAcceptedProtocol={isAcceptedProtocol} />
       }
-      <Arena 
+      <Arena
         role={role}
         isLoading={status === 'Updating protocol' ? true : false}
-        arena={arena[subgroupState]} 
-        divs={divs[subgroupState]} 
-        setArena={handleArenaChange} 
+        arena={arena[subgroupState]}
+        divs={divs[subgroupState]}
+        setArena={handleArenaChange}
         setDivs={handleDivsChange}
-        onSave={handleSave}/>
+        onSave={handleSave} />
     </div>
   )
 }

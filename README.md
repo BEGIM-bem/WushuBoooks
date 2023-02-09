@@ -13,10 +13,11 @@ on applications received from coaches. During the work, an application was devel
 
 
 ![](./img/main.png)
+![](./img/Calendar.png)
 
 
 
-Demo: https://wushubook2-fdp9g.ondigitalocean.app/
+<!-- Demo: https://wushubook2-fdp9g.ondigitalocean.app/ -->
 
 __Techonology__
 

@@ -86,7 +86,7 @@ function Calendar() {
 
     const handleDateClick = (arg) => {
 
-        user.role === 'admin' && (
+        user.role !== 'admin' && (
             setActive({
                 positions: {
                     left: arg.dayEl.offsetLeft,
@@ -102,7 +102,7 @@ function Calendar() {
 
 
     const handleEventClick = (info) => {
-        user.role === 'admin' && (
+        user.role !== 'admin' && (
             setActive({
                 isOpen: true, idEventItem:
                 {
@@ -187,7 +187,7 @@ function Calendar() {
 
                         dateClick={handleDateClick}
                         eventClick={handleEventClick}
-                        eventDrop={user.role === 'admin' && handleEventDrop}
+                        eventDrop={user.role !== 'admin' && handleEventDrop}
 
 
 
